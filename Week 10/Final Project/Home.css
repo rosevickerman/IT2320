@@ -1,0 +1,264 @@
+﻿/* General formatting across site */
+body {
+    font-size: 12px;
+    font-family: Calibri;
+    font-weight: normal;
+    font-style: normal;
+    background-color: powderblue;
+}
+#header {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Cambria;
+    margin-bottom: 1em;
+}
+#disclaimer {
+    font-size: 12px;
+    font-family: Calibri;
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 1em;
+}
+#main-content {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 2em;
+    padding: 1em;
+    overflow: hidden;
+}
+#footer {
+    margin-top: 1em;
+}
+.button {
+    background-color: skyblue;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.button:hover {
+    background-color: cadetblue;
+}
+.button:active {
+    background-color: lightgreen;
+}
+.error {
+    color: red;
+    float: right;
+    text-align: right;
+    margin-left: 2em;
+    width: 50%;
+    margin-top: -1em;
+    padding-bottom: 1em;
+}
+.top-screen {
+    border-bottom: 1px dashed skyblue;
+}
+.field-label {
+    display: inline-block;
+    text-align: left;
+    float: left;
+    width: 45%;
+    padding-top: .5em;
+    padding-bottom: .9em;
+}
+.textbox {
+    display: inline-block;
+    float: right;
+    margin-bottom: .8em;
+    background-color: aliceblue;
+}
+.textbox:focus {
+    background-color: lightblue;
+}
+
+/* Formatting for mobile devices */
+@media (max-width: 320px) {
+    /* General content formatting */
+    body {
+        width: 300px;
+        margin: 10px;
+    }
+    #header {
+        text-align: center;
+    }
+    #disclaimer {
+        text-align: center;
+    }
+    .section-info {
+        display: none;
+    }
+    .mobile-header {
+        font-family: Cambria;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        margin-bottom: 1em;
+    }
+    #main-content {
+        margin-top: 2em;
+        height: 475px;
+    }
+    .button {
+        display: inline-block;
+        margin-top: 1em;
+        width: 220px;
+        padding: 2em;
+        border-radius: 10px;
+    }
+    .top-screen {
+        padding-bottom: 2em;
+    }
+    .textbox {
+        width: 55%;
+    }
+
+    /* Formatting for login/register screen */
+    #logged-out .top-screen .field-label {
+        width: 30%;
+    }
+    #logged-out .top-screen .textbox {
+        width: 70%;
+    }
+    #logged-out .bottom-screen {
+        margin-top: 1.5em;
+    }
+
+    /* Formatting for management screen */
+    #logged-in .top-screen {
+        padding: 0em 2em 1em 2em;
+    }
+    #logged-in .bottom-screen {
+        padding: 2em 2em 0em 2em;
+    }
+    #logged-in .button {
+        padding: 1em;
+        margin-bottom: 1em;
+        margin-top: 0em;
+        width: 91%;
+    }
+    #logged-in .textbox {
+        width: 100%;
+    }
+    #logged-in .field-label {
+        width: 100%;
+        padding-bottom: .5em;
+        padding-top: 0em;
+    }
+    #logged-in #account-name {
+        font-weight: bold;
+    }
+    #logged-in .account-id {
+        margin-bottom: 1em;
+        padding: .3em;
+    }
+}
+
+/* Formatting for desktop browsers */
+@media (min-width: 321px) {
+    /* Formatting for general content */
+    body {
+        margin: 2em;
+        width: 520px;
+    }
+    .mobile-header {
+        display: none;
+    }
+    #content {
+        margin: .5em;
+    }
+    #main-content {
+        height: 325px;
+    }
+    .button {
+        width: 8em;
+        padding: .5em;
+        border-radius: 25px;
+        float: right;
+        margin-left: 60%;
+     }
+    .top-screen {
+        float: left;
+        padding: 1em 1em 1.2em 1em;
+    }
+    .bottom-screen {
+        float: left;
+        padding: 1.2em 1em 1em 1em;
+    }
+    .section-info {
+        display: inline-block;
+        width: 40%;
+    }
+    .user-info {
+        width: 60%;
+        display: inline-block;
+        float: right;
+    }
+    .textbox {
+        width: 50%;
+    }
+
+    /* Formatting for login/register screen */
+    #logged-out .top-screen .section-info {
+        width: 45%;
+        margin-top: 5%;
+    }
+    #logged-out .top-screen .textbox, #logged-out .top-screen .user-info {
+        width: 55%;
+    }
+    #logged-out .bottom-screen .section-info {
+        padding-top: 3.5em;
+    }
+    #logged-out .bottom-screen .field-label {
+        margin-left: 1em;
+    }
+
+    /* Formatting for management screen */
+    #logged-in #account-name {
+        font-weight: bold;
+    }
+    #logged-in .account-id {
+        display: inline-block;
+        margin-left: 3em;
+        padding-bottom: .8em;
+    }
+    #logged-in .button {
+        display: inline-block;
+        margin-left: 1em;
+        width: 5em;
+        margin-top: -.2em;
+    }
+    #logged-in .textbox {
+        width: 40%;
+        float: left;
+        margin-left: 1.2em;
+    }
+    #logged-in .field-label {
+        width: 20%;
+        padding-top: .2em;
+        clear: both;
+    }
+    #logged-in .top-screen {
+        border: 1px solid black;
+        width: 325px;
+        margin: 1em 0em 3em 5em;
+    }
+    #logged-in .top-screen .textbox {
+        margin-left: 10%;
+    }
+    #logged-in .bottom-screen {
+        border-top: 1px dashed skyblue;
+        padding: 3em;
+    }
+    #logged-in .bottom-screen .button {
+        margin-right: 21%;
+    }
+    #logged-in .bottom-screen .field-label {
+        margin-left: 5em;
+        text-align: right;
+    }
+}

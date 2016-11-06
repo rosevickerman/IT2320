@@ -1,0 +1,113 @@
+﻿@model FinalProject.Models.HomeViewModel
+
+<html>
+
+    <head>
+        <link href="~/Styles/Home.css" rel="stylesheet" />
+        <title>Final Project</title>
+    </head>
+
+    <body>
+        <script src="~/Scripts/jquery-2.1.1.min.js"></script>
+        <script src="~/Scripts/jquery-ui.min.js"></script>
+        <script src="~/Scripts/Home.js"></script>
+        
+        <div class="home">
+            <div id="header">
+                Welcome to Cuyahoga Community College Student Services Online
+            </div>
+
+            <div id="content">
+                <div id="disclaimer">
+                    Cuyahoga Community College recognizes students' rights to access personal
+                    and academic records in accordance with the Family Educational Rights and
+                    Privacy Act of 1974 (FERPA) as amended by Public Law 93-568.
+                </div>
+                <div id="main-content">
+                    <div id="logged-out">
+                        <div class="top-screen">
+                            <div class="section-info">
+                                Already have an account with us? Returning users may log in by
+                                entering their site username and password.
+                            </div>
+                            <div class="mobile-header">Log In</div>
+                            <div class="user-info">
+                                <div class="field-label">Username</div>
+                                <input class="textbox" type="text" value="" tabindex="1" />
+                                <div class="error">Username does not exist.</div>
+                                <div class="field-label">Password</div>
+                                <input class="textbox" type="text" value="" tabindex="2" />
+                                <div class="error">Password is incorrect.</div>
+                                <!--changes screen for testing, remove before publish-->
+                                <div class="button CHANGESCREEN" tabindex="3" unselectable="on">
+                                    Log In
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-screen">
+                            <div class="section-info">
+                                New users, please create a new account by providing us with some
+                                basic information.
+                            </div>
+                            <div class="mobile-header">Create New Account</div>
+                            <div class="user-info">
+                                <div class="field-label">Username</div>
+                                <input class="textbox" type="text" value="" tabindex="4" />
+                                <div class="error">The username you entered is already taken.</div>
+                                <div class="field-label">Password</div>
+                                <input class="textbox" type="text" value="" tabindex="5" />
+                                <div class="error">Password must contain at least six characters.</div>
+                                <div class="field-label">E-Mail Address</div>
+                                <input class="textbox" type="text" value="" tabindex="6" />
+                                <div class="error">Please enter a valid email address.</div>
+                                <div class="error">The email entered already has an associated account.</div>
+                                <div class="field-label">Repeat E-Mail Address</div>
+                                <input class="textbox" type="text" value="" tabindex="7" />
+                                <div class="error">The emails do not match.</div>
+                                <!--changes screen for testing, remove before publish-->
+                                <div class="button CHANGESCREEN" tabindex="8" unselectable="on">
+                                    Create Account
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="logged-in">
+                        <div class="top-screen">
+                            <!--Use this format to create the rest of the sections-->
+                            <div class="field-label" id="account-name">AccountName</div>
+                            <!--Name will change through JQuery-->
+                            <div class="account-id">AccountName</div>
+                            <div class="field-label">EMailAddress</div>
+                            <input class="textbox" type="text" value="" tabindex="2" />
+                            <div class="button" tabindex="3" unselectable="on">
+                                Update
+                            </div>
+                            <div class="field-label">CurrentGPA</div>
+                            <input class="textbox" type="text" value="" tabindex="4" />
+                            <div class="button" tabindex="5" unselectable="on">
+                                Update
+                            </div>
+                        </div>
+                        <div class="bottom-screen">
+                            <div class="field-label">ElementName</div>
+                            <input class="textbox" type="text" value="" tabindex="6" />
+                            <div class="field-label">ElementValue</div>
+                            <input class="textbox" type="text" value="" tabindex="7" />
+                            <!--changes screen for testing, remove before publish-->
+                            <div class="button CHANGESCREEN2" tabindex="8" unselectable="on">
+                                Add
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div id="footer">
+                Cuyahoga Community College<br />
+                700 Carnegie Avenue, Cleveland, OH 44115
+            </div>
+        </div>
+    </body>
+
+</html>
