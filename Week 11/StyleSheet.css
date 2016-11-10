@@ -1,0 +1,46 @@
+﻿@font-face {
+    font-family: 'Tomino';
+    src: url('Fonts/Tomino_PERSONAL_USE_ONLY.ttf') format('truetype');
+}
+body {
+    font-family: Tomino;
+    margin: 2em;
+    background-color: dimgrey;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#main {
+    font-size: 2em;
+    font-weight: bold;
+    color: mediumseagreen;
+    display: inline-block;
+    margin-top: 5em;
+}
+#main:active{
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    transition: 2s;
+}
+#button {
+    background-color: seagreen;
+    color: floralwhite;
+    padding: 1em;
+    border-radius: .5em;
+    width: 10em;
+    text-align: center;
+}
+#button:hover{
+    background-color: lightseagreen;
+    transition-duration: .5s;
+}
+#button:active {
+    box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.2);
+}
+#footer {
+    margin-top: 10em;
+    transform: rotate(5deg);
+    font-size: 1em;
+}
